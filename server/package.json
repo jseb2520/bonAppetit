@@ -1,0 +1,31 @@
+{
+  "name": "bon-appetit-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/bin/index.js",
+  "scripts": {
+    "start": "node ./node_modules/.bin/pm2-runtime ./src/bin",
+    "dev": "NODE_ENV=production DATABASE_URL=mongodb://localhost:27017/bon-appetit PORT=3001 DEBUG=bon-appetit-api:* nodemon ./src/bin/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/steniowagner/bon-appetit-server.git"
+  },
+  "author": "Stenio Wagner",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/steniowagner/bon-appetit-server/issues"
+  },
+  "homepage": "https://github.com/steniowagner/bon-appetit-server#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "mongoose": "^5.6.11",
+    "pm2": "^3.2.9"
+  },
+  "devDependencies": {
+    "debug": "^4.1.1",
+    "dotenv": "^6.2.0",
+    "nodemon": "^1.18.4"
+  }
+}
