@@ -121,6 +121,7 @@ def enableHermes = project.ext.react.get("enableHermes", false);
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
@@ -197,6 +198,7 @@ android {
 }
 
 dependencies {
+    implementation "androidx.appcompat:appcompat:1.0.2"
     implementation project(':@react-native-community_async-storage')
     implementation project(':react-native-splash-screen')
     implementation project(':react-native-reanimated')

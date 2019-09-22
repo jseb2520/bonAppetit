@@ -1,21 +1,22 @@
 package com.bonappetit;
 
 import android.app.Application;
-import android.util.Log;
 
-import com.facebook.react.PackageList;
-import com.facebook.hermes.reactexecutor.HermesExecutorFactory;
-import com.facebook.react.bridge.JavaScriptExecutorFactory;
 import com.facebook.react.ReactApplication;
-import com.reactnativecommunity.asyncstorage.AsyncStoragePackage;
-import org.devio.rn.splashscreen.SplashScreenReactPackage;
-import com.swmansion.reanimated.ReanimatedPackage;
-import com.BV.LinearGradient.LinearGradientPackage;
+import com.oblador.vectoricons.VectorIconsPackage;
+import com.dylanvann.fastimage.FastImageViewPackage;
 import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
+import com.facebook.react.shell.MainReactPackage;
 import com.facebook.soloader.SoLoader;
+import com.airbnb.android.react.maps.MapsPackage;
+import org.devio.rn.splashscreen.SplashScreenReactPackage;
+import com.swmansion.reanimated.ReanimatedPackage;
 
+import com.BV.LinearGradient.LinearGradientPackage;
+
+import java.util.Arrays;
 import java.util.List;
 
 public class MainApplication extends Application implements ReactApplication {
@@ -28,11 +29,9 @@ public class MainApplication extends Application implements ReactApplication {
 
     @Override
     protected List<ReactPackage> getPackages() {
-      @SuppressWarnings("UnnecessaryLocalVariable")
-      List<ReactPackage> packages = new PackageList(this).getPackages();
-      // Packages that cannot be autolinked yet can be added manually here, for example:
-      // packages.add(new MyReactNativePackage());
-      return packages;
+      return Arrays.<ReactPackage>asList(new MainReactPackage(), new VectorIconsPackage(),
+          new RNGestureHandlerPackage(), new FastImageViewPackage(), new LinearGradientPackage(), new MapsPackage(),
+          new SplashScreenReactPackage(), new ReanimatedPackage());
     }
 
     @Override
