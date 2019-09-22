@@ -1,8 +1,8 @@
 const config = {
   production: {
-    DATABASE_URL: process.env.DATABASE_URL,
-    PORT: process.env.PORT
-  }
+    DATABASE_URL: 'mongodb://localhost:27017/bon-appetit',
+    PORT: 3001,
+  },
 };
 
-module.exports = config[process.env.NODE_ENV];
+module.exports = config['production'];

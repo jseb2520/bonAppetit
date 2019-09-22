@@ -4,13 +4,13 @@ import createSagaMiddleware from 'redux-saga';
 import sagas from './sagas';
 import reducers from './ducks';
 
-const sagaMonitor = null;
-const sagaMiddleware = createSagaMiddleware({sagaMonitor});
+import '../config/ReactotronConfig';
+
+const sagaMiddleware = createSagaMiddleware();
 
 const middleware = [sagaMiddleware];
 
-const createAppropriateStore = createStore;
-const store = createAppropriateStore(reducers, applyMiddleware(...middleware));
+const store = createStore(reducers, applyMiddleware(...middleware));
 
 sagaMiddleware.run(sagas);
 

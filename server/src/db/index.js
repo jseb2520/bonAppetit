@@ -3,7 +3,7 @@ const environment = require("../config/environment");
 
 mongoose.connect(
   environment.DATABASE_URL,
-  { useNewUrlParser: true }
+  {useNewUrlParser: true, useUnifiedTopology: true},
 );
 mongoose.Promise = global.Promise;
 
