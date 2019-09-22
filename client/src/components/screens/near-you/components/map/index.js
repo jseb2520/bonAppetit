@@ -70,7 +70,7 @@ class Map extends Component<Props, {}> {
 
     const {latitude, longitude} = restaurants[indexLocationSelected].location;
 
-    this._mapRef.animateToCoordinate(
+    this._mapRef.animateCamera(
       {
         latitude,
         longitude,

@@ -1,6 +1,6 @@
 // @flow
 
-import {AsyncStorage} from 'react-native';
+import {AsyncStorage} from '@react-native-community/async-storage';
 
 const APP_STORAGE_KEY = '@BON_APPETIT';
 

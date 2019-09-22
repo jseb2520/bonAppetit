@@ -1,4 +1,4 @@
-package com.bonappetitapp;
+package com.bonappetit;
 
 import android.app.Application;
 import android.util.Log;
@@ -7,6 +7,11 @@ import com.facebook.react.PackageList;
 import com.facebook.hermes.reactexecutor.HermesExecutorFactory;
 import com.facebook.react.bridge.JavaScriptExecutorFactory;
 import com.facebook.react.ReactApplication;
+import com.reactnativecommunity.asyncstorage.AsyncStoragePackage;
+import org.devio.rn.splashscreen.SplashScreenReactPackage;
+import com.swmansion.reanimated.ReanimatedPackage;
+import com.BV.LinearGradient.LinearGradientPackage;
+import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.soloader.SoLoader;
