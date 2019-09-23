@@ -17,12 +17,6 @@ $ cd server/
 **Installing dependencies**
 
 ```
-$ yarn
-```
-
-_or_
-
-```
 $ npm install
 ```
 
