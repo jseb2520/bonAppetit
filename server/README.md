@@ -1,28 +1,3 @@
-
-# Bon-Appetit-Server
-
-This is the back-end of the [Bon-Appetit App](https://github.com/steniowagner/bon-appetit-app). It's a RESTful API built with NodeJS, that serves all the static data that the App needs.
-
-## About this Project
-
-This project is part of my personal portfolio, so, I'll be happy if you could provide me any feedback about the project, code, structure or anything that you can report that could make me a better developer!
-
-  
-
-Email-me: stenio.wagner1@gmail.com
-
-  
-
-Connect with me at [LinkedIn](https://www.linkedin.com/in/steniowagner/)
-
-  
-
-Also, you can use this Project as you wish, be for study, be for make improvements or earn money with it!
-
-  
-
-It's free!
-
 ## Getting Started
 
 ### Prerequisites
@@ -525,17 +500,3 @@ This routes are used to make CRUD operations with Reviews.
 - [Trip Advisor](https://www.tripadvisor.com.br) - Restaurants Information
 - [LatLong](https://www.latlong.net) - Convert Address to LatLong coordinates
 - [Amazon S3](https://aws.amazon.com/pt/s3/) - Storage Service
-
-## Contributing
-
-You can send how many PR's do you want, I'll be glad to analyse and accept them! And if you have any question about the project...
-
-Email-me: stenio.wagner1@gmail.com
-
-Connect with me at [LinkedIn](https://www.linkedin.com/in/steniowagner/)
-
-Thank you!
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/steniowagner/bon-appetit-server/blob/master/LICENSE) file for details
