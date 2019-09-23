@@ -199,7 +199,6 @@ android {
 
 dependencies {
     implementation "androidx.appcompat:appcompat:1.0.2"
-    implementation project(':@react-native-community_async-storage')
     implementation project(':react-native-splash-screen')
     implementation project(':react-native-reanimated')
     implementation project(':react-native-linear-gradient')
