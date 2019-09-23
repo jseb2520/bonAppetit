@@ -7,7 +7,23 @@
     "ios": "react-native run-ios",
     "android": "react-native run-android",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint *.js **/*.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "npm run lint:fix",
+      "git add"
+    ]
+  },
+  "rnpm": {
+    "assets": [
+      "./assets/fonts/"
+    ]
   },
   "dependencies": {
     "axios": "^0.19.0",
@@ -36,7 +52,7 @@
   "devDependencies": {
     "@babel/core": "7.6.0",
     "@babel/runtime": "7.6.0",
-    "@react-native-community/eslint-config": "0.0.5",
+    "babel-eslint": "^10.0.3",
     "babel-jest": "24.9.0",
     "eslint": "6.4.0",
     "flow": "^0.2.3",
