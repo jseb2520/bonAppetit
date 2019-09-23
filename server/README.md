@@ -9,9 +9,9 @@ To run this project in the development mode, you'll need to have a basic environ
 **Cloning the Repository**
 
 ```
-$ https://github.com/steniowagner/bon-appetit-server
+$ https://github.com/jseb2520/bonAppetit
 
-$ cd bon-appetit-server
+$ cd server/
 ```
 
 **Installing dependencies**
@@ -28,21 +28,16 @@ $ npm install
 
 ### Running
 
-Now, you'll need to change to development branch:
-```
-$ git checkout development
-```
-
 With all dependencies installed, the Database running and the environment properly configured, you can now run the server:
 
 ```
-$ yarn dev
+$ yarn start
 ```
 
 _or_
 
 ```
-$ npm run dev
+$ npm start
 ```
 
 After run the server, [populate the Database](#data-management).
